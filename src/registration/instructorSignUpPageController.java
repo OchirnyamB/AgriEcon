@@ -1,4 +1,4 @@
-package view;
+package registration;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -12,14 +12,9 @@ import java.io.IOException;
 /**
  * Created by bazarsad on 10/18/2016.
  */
-public class instructorSignUpSuccessPageController {
-
-    public void tryRegister(ActionEvent actionEvent) throws IOException {
-        String message = "";
-        System.out.println(message);
-    }
-    public void goBackToLoginPage(ActionEvent actionEvent) throws IOException {
-        Parent signupPageParent = FXMLLoader.load(getClass().getResource("welcomePage.fxml"));
+public class instructorSignUpPageController{
+    public void finishRegister(ActionEvent actionEvent) throws IOException {
+        Parent signupPageParent = FXMLLoader.load(getClass().getResource("instructorSignUpSuccessPage.fxml"));
         Scene signupPageScene = new Scene(signupPageParent);
         Stage signupPageStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         signupPageStage.hide();

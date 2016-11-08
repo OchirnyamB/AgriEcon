@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.text.*?>
-<?import javafx.scene.effect.*?>
 <?import com.jfoenix.controls.*?>
 <?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.signupPageController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="registration.signupPageController2">
    <children>
       <Pane layoutX="27.0" layoutY="24.0" prefHeight="352.0" prefWidth="547.0" style="-fx-background-color: #ffffff;">
          <children>
-            <JFXTextField fx:id="username" alignment="CENTER" focusColor="#8fdfe0" layoutX="127.0" layoutY="66.0" maxWidth="294.0" minWidth="195.0" prefHeight="46.0" prefWidth="294.0" promptText="University Email">
+            <JFXTextField fx:id="studentEmail" alignment="CENTER" focusColor="#8fdfe0" layoutX="127.0" layoutY="66.0" maxWidth="294.0" minWidth="195.0" onKeyReleased="#validateEmail" prefHeight="46.0" prefWidth="294.0" promptText="University Email">
                <font>
                   <Font size="14.0" />
                </font>
             </JFXTextField>
-            <JFXPasswordField fx:id="password" alignment="CENTER" focusColor="#8fdfe0" layoutX="128.0" layoutY="165.0" maxWidth="294.0" minWidth="195.0" prefHeight="46.0" prefWidth="294.0" promptText="Repeat Password">
+            <JFXPasswordField fx:id="password2" alignment="CENTER" focusColor="#8fdfe0" layoutX="128.0" layoutY="165.0" maxWidth="294.0" minWidth="195.0" onKeyReleased="#validateRepeatedPassword" prefHeight="46.0" prefWidth="294.0" promptText="Repeat Password">
                <font>
                   <Font size="14.0" />
                </font>
@@ -40,7 +39,7 @@
                   <Font size="14.0" />
                </font>
             </JFXRadioButton>
-            <JFXPasswordField fx:id="password1" alignment="CENTER" focusColor="#8fdfe0" layoutX="128.0" layoutY="115.0" maxWidth="294.0" minWidth="195.0" prefHeight="46.0" prefWidth="294.0" promptText="Password">
+            <JFXPasswordField fx:id="password1" alignment="CENTER" focusColor="#8fdfe0" layoutX="128.0" layoutY="115.0" maxWidth="294.0" minWidth="195.0" onKeyReleased="#validatePassword" prefHeight="46.0" prefWidth="294.0" promptText="Password">
                <font>
                   <Font size="14.0" />
                </font>

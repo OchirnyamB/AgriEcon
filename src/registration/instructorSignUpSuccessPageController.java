@@ -1,8 +1,6 @@
-package view;
+package registration;
 
-import com.jfoenix.controls.JFXRadioButton;
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
@@ -14,7 +12,7 @@ import java.io.IOException;
 /**
  * Created by bazarsad on 10/18/2016.
  */
-public class studentSignUpSuccessPageController {
+public class instructorSignUpSuccessPageController {
 
     public void tryRegister(ActionEvent actionEvent) throws IOException {
         String message = "";

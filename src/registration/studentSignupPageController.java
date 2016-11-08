@@ -1,4 +1,4 @@
-package view;
+package registration;
 
 import com.jfoenix.controls.JFXRadioButton;
 import javafx.event.ActionEvent;

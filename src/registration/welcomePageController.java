@@ -1,4 +1,4 @@
-package view;
+package registration;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -14,7 +14,7 @@ public class welcomePageController {
     public void tryLogin(ActionEvent actionEvent) {
     }
     public void trySignup(ActionEvent actionEvent) throws IOException {
-        Parent signupPageParent = FXMLLoader.load(getClass().getResource("signupPage.fxml"));
+        Parent signupPageParent = FXMLLoader.load(getClass().getResource("signupPage2.fxml"));
         Scene signupPageScene = new Scene(signupPageParent);
         Stage signupPageStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         signupPageStage.hide();
